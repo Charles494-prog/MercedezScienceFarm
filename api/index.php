@@ -1,7 +1,6 @@
 <?php
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL);
 
-// Set environment variables
-$_ENV['APP_ENV'] = getenv('APP_ENV') ?: 'production';
-
-// Point to the Laravel public directory
 require __DIR__ . '/../public/index.php';
